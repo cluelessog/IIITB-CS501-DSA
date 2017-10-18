@@ -27,7 +27,7 @@ int partition(int arr[],int i, int j){
 	int x = arr[j];
 	int l = i-1;
 	for(int r = i ; r < j; r++){
-		if(arr[r]<=x){    //move right until you find a number less than pivot, replace it with number at index l; see cormen
+		if(arr[r]<=x){   //move right until you find a number less than pivot, replace it with number at index l; see cormen
 			l++;
 			int temp = arr[l];
 			arr[l] = arr[r];
